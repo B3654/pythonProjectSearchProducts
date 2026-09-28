@@ -1,7 +1,14 @@
 {
   "remarks": "Наибольшая скорость",
   "observatory": {
-    "subjectSelector": ["sub2-"],
+    "subjectSelector": [
+      "JP Япония, Токио",
+      "FI Финляндия, Хельсинки",
+      "RU Санкт-Петербург",
+      "Польша • Варшава • WAW2",
+      "RU Россия, Москва",
+      "Англия"
+    ],
     "probeURL": "https://www.google.com/generate_204",
     "probeInterval": "5m",
     "enableConcurrency": true
@@ -12,27 +19,19 @@
       {
         "tag": "Наибольшая скорость",
         "selector": [
-  "FI Финляндия, Хельсинки",
-  "RU Москва",
-  "PL Польша",
-  "Англия",
-  "Япония",
-  "Англия 2",
-  "PL Польша 2",
-  "RU Москва 2"
-],
+          "JP Япония, Токио",
+          "FI Финляндия, Хельсинки",
+          "RU Санкт-Петербург",
+          "Польша • Варшава • WAW2",
+          "RU Россия, Москва",
+          "Англия"
+        ],
         "fallbackTag": "direct",
-        "strategy": {
-          "type": "leastPing"
-        }
+        "strategy": { "type": "leastPing" }
       }
     ],
     "rules": [
-      {
-        "type": "field",
-        "network": "tcp,udp",
-        "balancerTag": "Наибольшая скорость"
-      }
+      { "type": "field", "network": "tcp,udp", "balancerTag": "Наибольшая скорость" }
     ]
   }
 }
