@@ -17,7 +17,11 @@
       }
     ],
     "rules": [
-      { "type": "field", "network": "tcp,udp", "balancerTag": "Наибольшая скорость" }
+      {
+        "type": "field",
+        "network": "tcp,udp",
+        "balancerTag": "Наибольшая скорость"
+      }
     ]
   }
 }
