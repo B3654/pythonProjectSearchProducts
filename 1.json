@@ -11,7 +11,16 @@
     "balancers": [
       {
         "tag": "Наибольшая скорость",
-        "selector": ["sub2-"],
+        "selector": [
+  "FI Финляндия, Хельсинки",
+  "RU Москва",
+  "PL Польша",
+  "Англия",
+  "Япония",
+  "Англия 2",
+  "PL Польша 2",
+  "RU Москва 2"
+],
         "fallbackTag": "direct",
         "strategy": {
           "type": "leastPing"
